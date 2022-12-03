@@ -1,0 +1,10 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.button.is-primary {
+	background-color: #1c61aa;
+}
+
+.button.is-primary.is-hovered,
+.button.is-primary:hover {
+	background-color: hsl(211, 72%, 29%);
+}

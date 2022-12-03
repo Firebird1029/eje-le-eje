@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eje le Eje</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<!--  style="position: fixed; width: 100%;" -->
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<img src="/whitelogo.png">
+			</a>
+
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+				data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+			<div class="navbar-start"></div>
+
+			<div class="navbar-end">
+				<a class="navbar-item">
+					Documentation
+				</a>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						More
+					</a>
+
+					<div class="navbar-dropdown">
+						<a class="navbar-item">
+							About
+						</a>
+						<a class="navbar-item">
+							Jobs
+						</a>
+						<a class="navbar-item">
+							Contact
+						</a>
+						<hr class="navbar-divider">
+						<a class="navbar-item">
+							Report an issue
+						</a>
+					</div>
+				</div>
+
+				<div class="navbar-item">
+					<div class="buttons">
+						<a class="button is-primary" style="border-radius: 50px;">
+							<strong>Donate</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero is-large"
+		style="background-image: url(https://images.squarespace-cdn.com/content/v1/56000145e4b07406ad1dbffa/1565070719668-8QXKU0J8JJIZ6TI3TRGQ/ngo123-5395.jpg?format=2500w);">
+		<div class="hero-body">
+			<p class="title has-text-white">
+				Eje le Eje
+			</p>
+			<p class="subtitle has-text-white">
+				Ethopian nonprofit
+			</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container has-text-centered">
+			<h1 class="title">About</h1>
+			<p>Eje le Eje Ethiopia is a nonprofit that helps underprivileged children from single-mother households in
+				Ethiopia access basic education. We aim to break cycles of intergenerational poverty using education and
+				encourage active community participation to allow individuals to make a real impact in their local
+				community.</p>
+			<hr class="my-6">
+			<h1 class="title">What We Do</h1>
+			<p>We sponsor children between ages 3-5 to go to local private kindergartens by paying their school fees.
+				After kindergarten, we will ensure students continue their education at local public schools by
+				partnering with the Education Bureau at the local level and covering the cost of school supplies and
+				uniforms. We will also organize skill training programs for their mothers in collaboration with other
+				local nonprofits and NGOs where trainees can get seed money to open their businesses.</p>
+			<hr class="my-6">
+			<h1 class="title">What Makes Us Different</h1>
+			<p>We believe that community members in big urban cities in Ethiopia could be a primary source of support
+				for underprivileged and vulnerable children to get access to basic education through sponsorship and
+				other donations. Our non-profit will be working to leverage this untapped domestic potential in local
+				communities and ensure that it is a community-led, and community-owned enterprise.We believe that active
+				participation and involvement of community members in our projects will increase the number of sponsors
+				and raise adequate funds to ensure the sustainability of the nonprofit. </p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Eje le Eje</strong> by Hannahmariam Mekbib
+			</p>
+		</div>
+	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+		});
+	</script>
+</body>
+
+</html>
